@@ -98,6 +98,7 @@ class Record():
             this_year = date_of_today.year
             this_month = date_of_today.month
 
+            # если месяц д.р. уже прошел то сдвигаем на год вперед, если только будет оставляем єтот год
             if this_month < month_of_birthday:
                 target_birthday_day = datetime_of_birthday.replace(
                     year=this_year)
